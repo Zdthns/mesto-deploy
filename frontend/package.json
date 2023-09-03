@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && scp -Сr ./build/* zdthns@158.160.117.15:/home/zdthns/mesto-deploy/frontend"
   },
   "eslintConfig": {
     "extends": [
