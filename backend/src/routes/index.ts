@@ -1,4 +1,4 @@
-import {
+import express, {
   Router, Request, Response, NextFunction,
 } from 'express';
 import userRouter from './users';
@@ -9,8 +9,13 @@ import {
   createUser, login,
 } from '../controllers/users';
 import { validateUserBody, validateAuthentication } from '../middlewares/validatons';
-
+const app = express();
 const router = Router();
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+}); 
 router.post('/signup', validateUserBody, createUser);
 router.post('/signin', validateAuthentication, login);
 
