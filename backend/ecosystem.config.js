@@ -18,7 +18,7 @@ module.exports = {
     //  'pre-deploy': `scp ./*.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
     //   'post-deploy': 'npm i && npm run build',
        'pre-deploy-local': `bash scripts/deployEnv.sh ${DEPLOY_USER}@${DEPLOY_HOST} ${DEPLOY_PATH}`,
-       'post-deploy': 'cd backend && pwd && npm i && npm ci && npm run build && pm2 startOrRestart ecosystem.config.js --env production',
+       'post-deploy': 'cd backend && pwd && npm i && npm run build && pm2 startOrRestart ecosystem.config.js --env production',
     },
   },
 }
