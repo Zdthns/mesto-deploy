@@ -15,4 +15,4 @@ module.exports = {
       "post-deploy": "cd frontend && pwd && npm i && npm run build",
     },
   },
-};
+}
