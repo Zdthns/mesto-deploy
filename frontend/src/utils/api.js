@@ -98,7 +98,7 @@ class Api {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "api.nensy.nomoredomainsicu.ru"
+        "Access-Control-Allow-Origin": "api.nensy.nomoredomainsicu.ru/signup"
       },
       body: JSON.stringify({ email, password }),
     }).then(getResponse);
