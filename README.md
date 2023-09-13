@@ -1,3 +1,3 @@
-# Деплой приложения на сервер с использованием pm2
-
-Стартеркит проекта по автоматизации деплоя фронтенда и бэкенда при помощи pm2 (pm2 deploy)
+IP адрес 158.160.98.195
+Frontend https://nensy.nomoredomainsicu.ru
+Backend https://api.nensy.nomoredomainsicu.ru
