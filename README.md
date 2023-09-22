@@ -5,7 +5,7 @@
  </p>
 <ul>
     <li>верстка,</li>
-    <li>Javascript и работа с Api<li>
+    <li>Javascript и работа с Api</li>
     <li>работа с БД</li>
     <li>авторизация</li>
 </ul>
